@@ -1,6 +1,6 @@
-#Bootcamp completo da TQI.
+# Bootcamp completo da TQI.
 
-##Cada pasta representa um módulo com suas respectivas atividades inclusas.
+## Cada pasta representa um módulo com suas respectivas atividades inclusas.
 
 #### [ ] Módulo 1 - Conteúdo de abertura
 #### [ ] Módulo 2 - HTML/CSS
