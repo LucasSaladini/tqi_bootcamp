@@ -3,7 +3,7 @@
 ## Cada pasta representa um módulo com suas respectivas atividades inclusas.
 
 - [x] Módulo 1 - Conteúdo de abertura
-- [ ] Módulo 2 - HTML/CSS
+- [x] Módulo 2 - HTML/CSS
 - [ ] Módulo 3 - Javascript
 - [ ] Módulo 4 - ReactJS
 - [ ] Módulo 5 - SQL
