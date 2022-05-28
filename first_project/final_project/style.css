@@ -206,7 +206,7 @@ a:hover {
 .card-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 90%;
 }
 
@@ -214,7 +214,7 @@ a:hover {
     height: 300px;
     width: 400px;
     margin: 3rem 0 0;
-    background: url('./images/room.jpg');
+    background: url('./images/nft.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,6 +232,15 @@ a:hover {
     font-family: sans-serif;
     letter-spacing: 1px;
     color: rgb(109, 109, 109);
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
 }
 
 .card-wrapper::before {
@@ -270,4 +279,57 @@ a:hover {
     opacity: 1;
     width: 350px;
     height: 250px;
+}
+
+.card:hover>.card-wrapper p {
+    font-size: 14px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Footer */
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b1c2b;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .container .card-container:nth-child(1),
+    .container .card-container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        height: 250px;
+        width: 250px;
+    }
+
+    .card-text {
+        width: 90%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .card:hover>.card-wrapper::before {
+        height: 190px;
+        width: 190px;
+    }
 }
