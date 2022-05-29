@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.wrapper .input {
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.wrapper .add {
+    margin-left: 15px;
+    border-radius: 5px;
+    background: lightgreen;
+    border: none;
+}
