@@ -14,3 +14,4 @@
 ### Projetos
 - [x] Projeto Desenvolvendo um menu hamburguer e *morphing* menu com CSS *Transitions* [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/first_project)
 - [x] Projeto de contador [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/javascript/counter)
+- [] Projeto de lista de tarefas 
