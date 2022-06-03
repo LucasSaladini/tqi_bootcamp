@@ -16,3 +16,4 @@
 - [x] Projeto de contador [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/javascript/counter)
 - [ ] Projeto de lista de tarefas
 - [x] API para recuperar imagens aleatórias [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/javascript/api)
+- [x] Script utilizando *Programação Orientada a Objetos* [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/javascript/object_oriented)
