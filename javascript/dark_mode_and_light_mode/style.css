@@ -1,0 +1,19 @@
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#mode-selector {
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    background: darkgray;
+    color: white;
+}
+
+.dark-mode {
+    background: #2c2f33;
+    color: white;
+}
