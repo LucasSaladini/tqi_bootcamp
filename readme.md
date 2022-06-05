@@ -4,7 +4,7 @@
 
 - [x] Módulo 1 - Conteúdo de abertura
 - [x] Módulo 2 - HTML/CSS
-- [ ] Módulo 3 - Javascript
+- [x] Módulo 3 - Javascript
 - [ ] Módulo 4 - ReactJS
 - [ ] Módulo 5 - SQL
 - [ ] Módulo 6 - Java
@@ -17,3 +17,4 @@
 - [ ] Projeto de lista de tarefas
 - [x] API para recuperar imagens aleatórias [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/javascript/api)
 - [x] Script utilizando *Programação Orientada a Objetos* [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/javascript/object_oriented)
+- [x] Jogo da memória [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/memory_game)
