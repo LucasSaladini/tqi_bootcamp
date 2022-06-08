@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { string } from 'prop-types';
+import { Button } from "../../components";
 
 export const Quotes = ({ quote, speaker }) => {
     return (
         <Wrapper>
             <Quote>{quote}</Quote>
             <Speaker>- {speaker}</Speaker>
-            <button>Quote No Jutsu</button>
+            <Button>Quote No Jutsu</Button>
         </Wrapper>
     )
 }
