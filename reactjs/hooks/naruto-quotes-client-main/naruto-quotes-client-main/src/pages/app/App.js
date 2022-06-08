@@ -1,11 +1,25 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import narutoImg from '../../images/naruto.png';
 import { Quotes } from '../../components/quotes';
+import { getQuote } from '../../services';
+import jutsoSound from '../../sounds/jutso.mp3';
+
+const audio = new Audio(jutsoSound)
 
 export function App() {
+  const [quoteState, setQuoteState] = useState({ quote: 'ok', speaker: 'speaker'})
+
+  const onUpdate = async () => {
+    const quote = await getQuote();
+    audio.play()
+    
+    setQuoteState(quote);
+  }
+
   return (
     <Container>
-      <Quotes quote={'ok'} speaker={'Speaker'}/>
+      <Quotes {...quoteState} onUpdate={onUpdate} />
       <NarutoImg src={narutoImg} alt="Naruto com uma kunai" />
     </Container>
   )
