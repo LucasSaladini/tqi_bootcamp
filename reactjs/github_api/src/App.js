@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./components/layout";
 import Profile from "./components/profile";
-import Repositores from "./components/repositories";
+import Repositories from "./components/repositories";
 import { ResetCSS } from "./global/resetCSS";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <ResetCSS />
       <Layout>
         <Profile />
-        <Repositores />
+        <Repositories />
       </Layout>
     </main>
   );
