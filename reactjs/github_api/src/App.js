@@ -1,10 +1,15 @@
 import React from "react";
+import Layout from "./components/layout";
 
 function App() {
   return (
-    <div className="App">
-      github api
-    </div>
+    <main className="App">
+      <Layout>
+        <div>User</div>
+        <div>Repositories</div>
+        <div>Starreds</div>
+      </Layout>
+    </main>
   );
 }
 
