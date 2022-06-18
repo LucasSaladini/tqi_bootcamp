@@ -1,11 +1,11 @@
 import React from 'react'
 
-const RepositoryItem = () => {
+const RepositoryItem = ({ name, linkToRepo, fullName}) => {
   return (
     <div>
-        <h2>calculator</h2>
+        <h2>{name}</h2>
         <h4>full name: </h4>
-        <a href='https://github.com/LucasSaladini' target="_blank" rel="noreferrer">lucassaladini/calculator</a>
+        <a href={linkToRepo} target="_blank" rel="noreferrer">{fullName}</a>
     </div>
   )
 }
