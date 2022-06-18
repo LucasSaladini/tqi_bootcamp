@@ -28,7 +28,7 @@ const GithubProvider = ({ children }) => {
         }
 
         return (
-            <GithubProvider.Provider value={contextValue}>{children}</GithubProvider.Provider>
+            <GithubContext.Provider value={contextValue}>{children}</GithubContext.Provider>
         )
     }
 }
