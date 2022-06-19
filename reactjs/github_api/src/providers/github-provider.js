@@ -10,6 +10,7 @@ export const GithubContext = createContext({
 
 const GithubProvider = ({ children }) => {
         const [githubState, setGithubState] = useState({
+            hasUser: false,
             loading: false,
            user: {
             avatar: undefined,
@@ -27,10 +28,11 @@ const GithubProvider = ({ children }) => {
         })
 
         const getUser = (username) => {
+            setGithubState((prevState) => ({...prevState, loading: !prevState.loading}))
             api.get(`users/${username}`)
             .then(({data}) => {
-                console.log(data)
                 setGithubState((prevState) => ({...prevState,
+                    hasUser: true,
                     user:{
                         avatar: data.avatar_url,
                         login: data.login,
@@ -45,6 +47,8 @@ const GithubProvider = ({ children }) => {
                         public_repos: data.public_repos,
                     }
                 }))
+            }).finally(() => {
+                setGithubState((prevState) => ({...prevState, loading: !prevState.loading}))
             })
         }
 
