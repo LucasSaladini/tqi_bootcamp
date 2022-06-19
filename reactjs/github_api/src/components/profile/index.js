@@ -4,16 +4,29 @@ import useGithub from '../../hooks/github-hooks'
 
 const Profile = () => {
     const { githubState } = useGithub()
+
   return (
     <S.Wrapper>
-        <S.Image src="https://avatars.githubusercontent.com/u/64647470?v=4" alt="Avatar of user" />
+        <S.Image src={githubState.user.avatar} alt="Avatar of user" />
         <S.WrapperInfoUser>
             <div>
                 <h1>{githubState.user.name}</h1>
-                <S.WrapperUsername>
+                <S.WrapperGeneric>
                     <h3>Username: </h3>
                     <a href={githubState.user.html_url} target="_blank" rel="noreferrer">{githubState.user.login}</a>
-                </S.WrapperUsername>
+                </S.WrapperGeneric>
+                <S.WrapperGeneric>
+                    <h3>Company:</h3>
+                    <span>{githubState.user.company}</span>
+                </S.WrapperGeneric>
+                <S.WrapperGeneric>
+                    <h3>Location:</h3>
+                    <span>{githubState.user.location}</span>
+                </S.WrapperGeneric>
+                <S.WrapperGeneric>
+                    <h3>Blog:</h3>
+                    <a href={githubState.user.blog} target="_blank" rel="noreferrer">{githubState.user.blog}</a>
+                </S.WrapperGeneric>
             </div>
             <S.WrapperStatusCount>
                 <div>
