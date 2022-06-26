@@ -18,4 +18,4 @@
 - [x] API para recuperar imagens aleatórias [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/javascript/api)
 - [x] Script utilizando *Programação Orientada a Objetos* [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/javascript/object_oriented)
 - [x] Jogo da memória [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/memory_game)
-- [x] GitHub API [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/reactjs/github_api]
+- [x] GitHub API [Link](https://github.com/LucasSaladini/tqi_bootcamp/tree/main/reactjs/github_api)
