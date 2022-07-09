@@ -19,3 +19,4 @@ public class Factorial {
 		System.out.println(multiplication);
 	}
 }
+
