@@ -4,22 +4,7 @@ import java.util.Random;
 
 public class Multidimensional_Array {
 	public static void main(String[] args) {
-		Random random = new Random();
-		
-		int[][] A = new int [4][4];
-		
-		for(int i = 0; i < A.length; i++) {
-			for(int j = 0; j < A[i].length; j++) {
-				A[i][j] = random.nextInt(9);
-			}
-		}
-		
-		System.out.println("Matriz: ");
-		for (int[] row  : A) {
-			for (int column : row) {
-				System.out.print(column + " ");
-			}
-			System.out.println();
-		}
+		int[][] numeros = {{4, 9, 8, 5}, {3, 0, 1, 5}, {1, 2, 7, 4}};
+		System.out.print(numeros[2][2]);
 	}
 }
