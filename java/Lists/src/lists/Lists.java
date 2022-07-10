@@ -1,6 +1,8 @@
 package lists;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class Lists {
@@ -33,6 +35,44 @@ public class Lists {
 		System.out.println("Exiba todas as notas na ordem em que foram informadas: ");
 		for(Double grade : grades) System.out.println(grade);
 		
+		System.out.println("Exiba a terceira nota informada: " + grades.get(2));
+		System.out.println(grades.toString());
 		
+		System.out.println("Exiba a menor nota: " + Collections.min(grades));
+		
+		System.out.println("Exiba a maior nota: " + Collections.max(grades));
+		
+		Iterator<Double> iterator = grades.iterator();
+		Double sum = 0d;
+		while(iterator.hasNext()) {
+			Double next = iterator.next();
+			sum += next;
+		}
+		System.out.println("Exiba a soma dos valores: " + sum);
+		
+		System.out.println("Exiba a média das notas: " + (sum/grades.size()));
+		
+		System.out.println("Remova a nota 0: ");
+		grades.remove(0d);
+		System.out.println(grades);
+		
+		System.out.println("Remova a nota na posição 0: ");
+		grades.remove(0);
+		System.out.println(grades);
+		
+		System.out.println("Remova as notas menores que 7 e exiba a lista: ");
+		Iterator<Double> iterator1 = grades.iterator();
+		while(iterator1.hasNext()) {
+			Double next = iterator1.next();
+			
+			if(next < 7) iterator1.remove();
+		}
+		System.out.println(grades);
+		
+		System.out.println("Apague toda a lista: ");
+		grades.clear();
+		System.out.println(grades);
+		
+		System.out.println("Confira se a lista está vazia: " + grades.isEmpty());
 	}
 }
